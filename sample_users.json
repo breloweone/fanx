@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "description": "FANX örnek kullanıcı metrikleri. Bu dosya demo amaçlıdır; yatırım / gelir vaadi değildir.",
+    "note_legal": "XP = hizmet katkısı. CCS = Composite Contribution Score (aktiflik + kalite + ağ etkisi). RewardPreview = Fan Pool dağılımından katkı oranlı pay; temettü değildir.",
+    "fields": {
+      "user_id": "Anonimleştirilmiş kullanıcı ID'si",
+      "role": "fan | creator | hybrid",
+      "xp_day": "Günlük XP üretimi (toplam görev puanı)",
+      "ai_quality": "İçerik kalite katsayısı (0-1 arası)",
+      "ccs": "Composite Contribution Score",
+      "ccs_components": {
+        "aktiflik": "Görev/etkileşim sıklığı",
+        "kalite": "AI kalite puanı + rapor geçmişi",
+        "ag_etkisi": "Yeni kullanıcı çekme ve topluluk etkisi"
+      },
+      "burn_contrib": "Kullanıcının tetiklediği yakım yüzdesi (deflasyon etkisine katkı)",
+      "reward_preview_fanpool_share": "Fan Pool içi oransal hak (yüzde). Bu bir temettü vaadi değildir."
+    }
+  },
+  "users": [
+    {
+      "user_id": "USR-001",
+      "role": "fan",
+      "xp_day": 2400,
+      "ai_quality": 0.82,
+      "ccs": 58,
+      "ccs_breakdown": {
+        "aktiflik": 32,
+        "kalite": 18,
+        "ag_etkisi": 8
+      },
+      "burn_contrib": 0.7,
+      "reward_preview_fanpool_share": 0.0042,
+      "notes": "Çoğunlukla izleme (WATCH), beğeni (LIKE) ve mesaj (MESSAGE). Organik etkileşim, şikayet yok."
+    },
+    {
+      "user_id": "USR-002",
+      "role": "creator",
+      "xp_day": 5200,
+      "ai_quality": 0.94,
+      "ccs": 93,
+      "ccs_breakdown": {
+        "aktiflik": 28,
+        "kalite": 46,
+        "ag_etkisi": 19
+      },
+      "burn_contrib": 2.4,
+      "reward_preview_fanpool_share": 0.021,
+      "notes": "Orijinal içerik (CREATE / UPLOAD / NFT-style). Yüksek kalite, yüksek erişim. Topluluğa kullanıcı çekiyor."
+    },
+    {
+      "user_id": "USR-003",
+      "role": "hybrid",
+      "xp_day": 3100,
+      "ai_quality": 0.71,
+      "ccs": 47,
+      "ccs_breakdown": {
+        "aktiflik": 35,
+        "kalite": 7,
+        "ag_etkisi": 5
+      },
+      "burn_contrib": 1.2,
+      "reward_preview_fanpool_share": 0.0031,
+      "notes": "Çok aktif ama kalite puanı orta. CCScore orta olduğu için Reward payı sınırlı — spam değil ama rafine değil."
+    },
+    {
+      "user_id": "USR-004",
+      "role": "fan",
+      "xp_day": 950,
+      "ai_quality": 0.77,
+      "ccs": 29,
+      "ccs_breakdown": {
+        "aktiflik": 18,
+        "kalite": 8,
+        "ag_etkisi": 3
+      },
+      "burn_contrib": 0.3,
+      "reward_preview_fanpool_share": 0.0017,
+      "notes": "Yeni kullanıcı. Henüz ağ etkisi yok ama AI_quality iyi olduğu için CCS düşük de olsa güvenli hesap."
+    },
+    {
+      "user_id": "USR-005",
+      "role": "creator",
+      "xp_day": 8800,
+      "ai_quality": 0.97,
+      "ccs": 128,
+      "ccs_breakdown": {
+        "aktiflik": 41,
+        "kalite": 61,
+        "ag_etkisi": 26
+      },
+      "burn_contrib": 4.9,
+      "reward_preview_fanpool_share": 0.044,
+      "notes": "Canlı yayın (EVENT), sponsor görev entegrasyonu (SPONSOR), NFT lisans satışı (CONTENT). DAO'nun 'yüksek değerli üretici' sınıfı."
+    }
+  ]
+}
