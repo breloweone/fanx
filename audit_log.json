@@ -1,0 +1,22 @@
+{
+  "legal_framework": {
+    "TBK_393": "XP -> Credit -> Cashout süreci hizmet ifası karşılığı ücrettir; yatırım getirisi değildir.",
+    "SPK_Exempt": "FANX, pasif getirili yatırım sözleşmesi sunmaz; menkul kıymet değildir.",
+    "MASAK_Compliant": "KYC zorunlu, kapalı devre, fiat köprüsü sınırlı; transfer izlenebilir.",
+    "MiCA_Utility": "Credit transferable değildir; kapalı devre dijital hizmet birimidir.",
+    "VARA_OffChain": "Dış borsaya çıkış yok; VASP lisansı gerektirmez.",
+    "FSEK_License": "Fan erişimi basit kullanım lisansıdır; mali haklar Creator'da kalır."
+  },
+  "dao_controls": [
+    "alpha_t (yakım oranı) DAO oylamasıyla belirlenir.",
+    "rho_t (buyback oranı) DAO rezerv yönetimiyle belirlenir.",
+    "R_conv (XP->Credit katsayısı) DAO enflasyon kontrolüdür.",
+    "w_j görev katsayıları DAO kaliteyi ödüllendirecek şekilde ayarlanır.",
+    "FanPool / CreatorPool / DAO / Platform yüzdeleri şeffaf ilan edilir."
+  ],
+  "compliance_notes": [
+    "Cashout kaydı MASAK uyumlu ledger'a düşer.",
+    "Her cashout 'hizmet bedeli iadesi' olarak loglanır, temettü değildir.",
+    "DAO kararları hash'lenip saklanır; geriye dönük denetlenebilir."
+  ]
+}
